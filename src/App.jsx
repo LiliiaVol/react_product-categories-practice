@@ -40,12 +40,12 @@ export const App = () => {
     }
 
     // розкоментуйте цю частину, вона працює, але lint свариться
-    // if (query.trim() !== '') {
-    //   filteredProducts = filteredProducts
-    //     .filter(product => product.name.toLowerCase()
-    //       .includes(query.toLowerCase())
-    //     );
-    // }
+    if (query.trim() !== '') {
+      filteredProducts = filteredProducts
+        .filter(product => product.name.toLowerCase()
+          .includes(query.toLowerCase())
+        );
+    }
 
     return filteredProducts;
   };
